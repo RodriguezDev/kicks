@@ -1,0 +1,46 @@
+:host {
+
+    * {
+        transition: all 100ms linear;
+    }
+
+    #footer-container {
+
+        color: #707070;
+        margin: 1% 2%;
+
+        * {
+            display: inline-block;
+        }
+
+        a {
+            margin: 0 10px;
+            color: #707070;
+        }
+
+        img {
+            margin-top: 12px;
+            float: right;
+            height: 24px;
+        }
+
+        #socials {
+            float: right;
+            margin-right: 40px;
+
+            p {
+                margin-right: 20px;
+            }
+        }
+
+        .facebook:hover {
+            color: rgb(59,89,151);
+        }
+        .twitter:hover {
+            color: rgb(28,178,232);
+        }
+        .instagram:hover {
+            color: rgb(253,73,46);
+        }
+    }
+}

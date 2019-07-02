@@ -1,0 +1,48 @@
+<!-- The desktop navbar -->
+<div *ngIf="desktop" id="top-bar-container" [ngClass]="{'scrolling': navSolid}">
+    <div id="logo">
+        <h1>K I C K S .</h1>
+    </div>
+    <div id="top-bar-left">
+        <p>Sale</p>
+        <p>Browse</p>
+        <p>Brands</p>
+    </div>
+    <div id="top-bar-right">
+        <p (click)="searchToggled()">Search</p>
+        <p>Help</p>
+        <p>Account</p>
+        <div class="cart-icon">
+            <p>1</p>
+        </div>
+    </div>
+    <br>
+    <div *ngIf="searchOpen" class="search-box">
+        <input type="text" placeholder="Search"/>
+    </div>
+</div>
+<!-- The mobile navbar -->
+<div *ngIf="!desktop" id="top-bar-container-mobile" [ngClass]="{'scrolling': navSolid || menuOpen}">
+    <div id="menu-options">
+        <i class="fas fa-bars" (click)="menuToggled()"></i>
+    </div>
+    <div id="logo">
+        <h1>K I C K S .</h1>
+    </div>
+    <div id="top-bar-right">
+        <div class="cart-icon">
+            <p>1</p>
+        </div>
+    </div>
+    <br>
+    <div *ngIf="menuOpen" id="menu">
+        <input type="text" placeholder="Search"/>
+        <p>Sale</p>
+        <p>Browse</p>
+        <p>Brands</p>
+        <div class="bar"></div>
+        <p>Help</p>
+        <p>Account</p>
+        <i id="cancel-menu" class="far fa-times-circle" (click)="menuToggled()"></i>
+    </div>
+</div>

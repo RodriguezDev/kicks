@@ -1,0 +1,14 @@
+<app-top-bar></app-top-bar>
+<div id="home-container">
+    <div id="home-main-image">
+        <div class="image-text">
+            <h3>Off White x Air Jordan 1</h3>
+            <p>Shop now</p>
+        </div>
+    </div>
+    <div id="featured-products">
+        <h2>Featured Products</h2>
+        <app-product-cell *ngFor="let product of featuredProducts" [product]="product"></app-product-cell>
+    </div>
+</div>
+<app-footer></app-footer>
