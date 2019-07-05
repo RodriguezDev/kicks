@@ -77,6 +77,13 @@
     }
 
     .scrolling {
+        // For a different effect...
+        /*
+        margin: 0 !important;  
+        width: 100% !important;
+        padding: 0 2% !important;
+        */
+        //
         background-color: rgba($color: #FFFFFF, $alpha: 0.9);
         border: 1px solid lightgray;
     }

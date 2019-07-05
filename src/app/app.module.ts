@@ -7,6 +7,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductCellComponent } from './product-cell/product-cell.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductCellComponent } from './product-cell/product-cell.component';
     TopBarComponent,
     HomePageComponent,
     FooterComponent,
-    ProductCellComponent
+    ProductCellComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,

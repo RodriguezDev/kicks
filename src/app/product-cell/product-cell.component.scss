@@ -6,9 +6,9 @@
 
     .product-cell-container {
         display: inline-block;
-        width: calc(88vw / 3);
+        width: calc(92vw / 3);
         height: 25vw;
-        margin: 0px 2%;
+        margin: 1%;
         border: 1px solid transparent;
         box-sizing: border-box;
 
@@ -26,10 +26,12 @@
             
             h3 {
                 margin: 8px 0;
+                font-size: 16px;
             }
 
             h4 {
                 margin: 8px 0;
+                font-size: 12px;
                 color: darkgray;
             }
         }

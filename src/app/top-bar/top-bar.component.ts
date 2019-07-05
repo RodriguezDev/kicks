@@ -45,15 +45,13 @@ export class TopBarComponent implements OnInit {
   public searchToggled() {
     
     if (this.searchOpen) {
-      this.navSolid = false;
       this.searchOpen = false;
+      // For if the user stops search while scrolled on page. 
+      const spaceFromTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      this.navSolid = spaceFromTop > 100 ? true : false;
     } else {
       this.navSolid = true;
       this.searchOpen = true;
     }
-
-    // For if the user stops search while scrolled on page. 
-    const spaceFromTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    this.navSolid = spaceFromTop > 100 ? true : false;
   }
 }
